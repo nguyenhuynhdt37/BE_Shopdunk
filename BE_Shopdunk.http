@@ -1,0 +1,6 @@
+@BE_Shopdunk_HostAddress = http://localhost:5213
+
+GET {{BE_Shopdunk_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
