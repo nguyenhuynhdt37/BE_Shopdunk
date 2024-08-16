@@ -16,5 +16,6 @@ namespace BE_Shopdunk.Data
             _database = client.GetDatabase(configuration["DataBaseName"]);
         }
         public IMongoCollection<User> Users => _database.GetCollection<User>("Users");
+        public IMongoCollection<Role> Roles => _database.GetCollection<Role>("Roles");
     }
 }

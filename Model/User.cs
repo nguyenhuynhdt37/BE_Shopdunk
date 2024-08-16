@@ -20,7 +20,10 @@ namespace BE_Shopdunk.Model
         public string? PasswordHash { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+        [BsonIgnoreIfNull]
         public DateTime LastAccessTime { get; set; }
-        public string? RoleID { get; set; }
+        public ObjectId RoleID { get; set; }
+        [BsonIgnoreIfNull]
+        public Role? Role { get; set; }
     }
 }
