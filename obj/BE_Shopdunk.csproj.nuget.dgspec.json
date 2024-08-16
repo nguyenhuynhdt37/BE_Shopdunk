@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/admin/DEV/REACTJS/BE_Shopdunk/BE_Shopdunk.csproj": {}
+    "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj": {}
   },
   "projects": {
-    "/Users/admin/DEV/REACTJS/BE_Shopdunk/BE_Shopdunk.csproj": {
+    "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/admin/DEV/REACTJS/BE_Shopdunk/BE_Shopdunk.csproj",
+        "projectUniqueName": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj",
         "projectName": "BE_Shopdunk",
-        "projectPath": "/Users/admin/DEV/REACTJS/BE_Shopdunk/BE_Shopdunk.csproj",
-        "packagesPath": "/Users/admin/.nuget/packages/",
-        "outputPath": "/Users/admin/DEV/REACTJS/BE_Shopdunk/obj/",
+        "projectPath": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj",
+        "packagesPath": "C:\\Users\\huynh\\.nuget\\packages\\",
+        "outputPath": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/admin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\huynh\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.28.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -77,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
