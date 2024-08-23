@@ -18,6 +18,8 @@ namespace BE_Shopdunk.Model
         public string? Email { get; set; }
         [Required]
         public string? PasswordHash { get; set; }
+
+        public string? Avatar { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         [BsonIgnoreIfNull]

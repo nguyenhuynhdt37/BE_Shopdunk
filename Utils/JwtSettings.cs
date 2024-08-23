@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BE_Shopdunk.Security
+namespace BE_Shopdunk.Utils
 {
     public class JwtSettings
     {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using BE_Shopdunk.Model;
 using Microsoft.IdentityModel.Tokens;
 
-namespace BE_Shopdunk.Security
+namespace BE_Shopdunk.Utils
 {
     public class JwtTokenGenerator
     {

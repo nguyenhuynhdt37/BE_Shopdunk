@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\wwwroot\\images\\users\\avatar\\image.png",
+      "PackagePath": "staticwebassets\\images\\users\\avatar\\image.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BE_Shopdunk.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BE_Shopdunk.props",
+      "PackagePath": "build\\BE_Shopdunk.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BE_Shopdunk.props",
+      "PackagePath": "buildMultiTargeting\\BE_Shopdunk.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BE_Shopdunk.props",
+      "PackagePath": "buildTransitive\\BE_Shopdunk.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

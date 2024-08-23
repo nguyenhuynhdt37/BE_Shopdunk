@@ -3694,7 +3694,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\huynh\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3702,11 +3702,11 @@
       "projectUniqueName": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj",
       "projectName": "BE_Shopdunk",
       "projectPath": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj",
-      "packagesPath": "C:\\Users\\huynh\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\huynh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3785,7 +3785,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

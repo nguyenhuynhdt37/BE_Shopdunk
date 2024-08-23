@@ -37,10 +37,18 @@ namespace BE_Shopdunk.Repositories
 
         public async Task<User> CreateAsync(User user)
         {
-            if (user == null) return null;
 
             var role = await _roles.Find(x => x.Name == "Client").FirstOrDefaultAsync();
-
+            if (role == null)
+            {
+                role = new Role
+                {
+                    Name = "Client",
+                    Description = "Client role"
+                };
+                await _roles.InsertOneAsync(role);
+                return await CreateAsync(user);
+            }
             user.RoleID = role.Id;
             user.UserName = user.UserName?.ToLowerInvariant();
             user.PasswordHash = PasswordHelper.HashPassword(user.PasswordHash);
@@ -90,15 +98,15 @@ namespace BE_Shopdunk.Repositories
             }
 
             var normalizedUserName = user.UserName.ToLower();
-
-            var filter = Builders<User>.Filter.And(
-                Builders<User>.Filter.Eq(u => u.UserName, normalizedUserName),
-                Builders<User>.Filter.Eq(u => u.PasswordHash, user.PasswordHash)
-            );
-
-            var userModel = await _users.Find(filter).FirstOrDefaultAsync();
+            var userModel = await _users.Find(x => x.UserName == normalizedUserName).FirstOrDefaultAsync();
             if (userModel == null) return null;
-
+            else
+            {
+                if (!PasswordHelper.VerifyPassword(user.PasswordHash, userModel.PasswordHash))
+                {
+                    return null;
+                }
+            }
             var role = await _roles.Find(x => x.Id == userModel.RoleID).FirstOrDefaultAsync();
             userModel.Role = role;
 

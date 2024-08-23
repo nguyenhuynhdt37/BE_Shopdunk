@@ -27,6 +27,7 @@ namespace BE_Shopdunk.Mappers
                 Id = user.Id.ToString(),
                 UserName = user.UserName,
                 Email = user.Email,
+                Avatar = user.Avatar,
                 Role = new RoleDto
                 {
                     Id = user.Role?.Id.ToString(),
