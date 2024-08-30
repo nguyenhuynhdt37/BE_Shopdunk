@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NSTtoof1I+gcKkL2ITeIe5493I9JQJUCqc7yy+aP/+Q=",
+  "Hash": "TpACRMiz+s7AImt4w/wFQ+cKHS8s7W089iD+iNt+qF4=",
   "Source": "BE_Shopdunk",
   "BasePath": "_content/BE_Shopdunk",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BE_Shopdunk\\wwwroot",
       "Source": "BE_Shopdunk",
-      "ContentRoot": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\wwwroot\\",
+      "ContentRoot": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\wwwroot\\",
       "BasePath": "_content/BE_Shopdunk",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\wwwroot\\images\\users\\avatar\\image.png",
+      "Identity": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\wwwroot\\images\\users\\avatar\\image.png",
       "SourceId": "BE_Shopdunk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\IT\\FULLSTACK_SHOPDUNK\\BE_Shopdunk\\wwwroot\\",
+      "ContentRoot": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\wwwroot\\",
       "BasePath": "_content/BE_Shopdunk",
       "RelativePath": "images/users/avatar/image.png",
       "AssetKind": "All",
