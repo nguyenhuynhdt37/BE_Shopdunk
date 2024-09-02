@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 [ApiController]
@@ -90,6 +91,17 @@ public class UsersController : ControllerBase
     {
         var users = await _userRepository.getAllUsersAsync();
         return Ok(users.Select(x => x.UserToUserDto()));
+    }
+    [Authorize]
+    [HttpGet("info")]
+    public async Task<IActionResult> getInfo()
+    {
+        var id = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (id == null) return NotFound();
+        var user = await _userRepository.GetByIdAsync(new ObjectId(id));
+        if (user == null) return NotFound();
+        user.Avatar = MyLibrary.GetLinkImage(user.Avatar ?? null);
+        return Ok(user.UserToUserDto());
     }
 
 

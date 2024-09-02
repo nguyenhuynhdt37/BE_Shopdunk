@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj": {}
+    "/home/huynh/dev/ShopDunk/BE_Shopdunk/BE_Shopdunk.csproj": {}
   },
   "projects": {
-    "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj": {
+    "/home/huynh/dev/ShopDunk/BE_Shopdunk/BE_Shopdunk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj",
+        "projectUniqueName": "/home/huynh/dev/ShopDunk/BE_Shopdunk/BE_Shopdunk.csproj",
         "projectName": "BE_Shopdunk",
-        "projectPath": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\BE_Shopdunk.csproj",
-        "packagesPath": "C:\\Users\\huynh\\.nuget\\packages\\",
-        "outputPath": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\obj\\",
+        "projectPath": "/home/huynh/dev/ShopDunk/BE_Shopdunk/BE_Shopdunk.csproj",
+        "packagesPath": "/home/huynh/.nuget/packages/",
+        "outputPath": "/home/huynh/dev/ShopDunk/BE_Shopdunk/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\huynh\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/huynh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -93,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

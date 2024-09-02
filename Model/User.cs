@@ -12,15 +12,15 @@ namespace BE_Shopdunk.Model
     {
         [BsonId]
         public ObjectId Id { get; set; }
-        [Required]
+        [BsonRequired]
         public string? UserName { get; set; }
-        [Required]
+        [BsonRequired]
         public string? Email { get; set; }
-        [Required]
+        [BsonRequired]
         public string? PasswordHash { get; set; }
 
         public string? Avatar { get; set; }
-        [Required]
+        [BsonRequired]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         [BsonIgnoreIfNull]
         public DateTime LastAccessTime { get; set; }

@@ -16,8 +16,8 @@ namespace BE_Shopdunk.Service
 
         public string GetHostUrl()
         {
-            var request = _httpContextAccessor.HttpContext.Request;
-            return $"{request.Scheme}://{request.Host}/images/";
+            var request = _httpContextAccessor?.HttpContext?.Request;
+            return $"{request?.Scheme}://{request?.Host}/images/";
         }
     }
 }

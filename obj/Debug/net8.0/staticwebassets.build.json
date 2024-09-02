@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TpACRMiz+s7AImt4w/wFQ+cKHS8s7W089iD+iNt+qF4=",
+  "Hash": "DDO2cgl08hQk0GKg6rxlEkK6i3kIyVTvoEuVk9Bo7eM=",
   "Source": "BE_Shopdunk",
   "BasePath": "_content/BE_Shopdunk",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "BE_Shopdunk\\wwwroot",
+      "Name": "BE_Shopdunk/wwwroot",
       "Source": "BE_Shopdunk",
-      "ContentRoot": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\wwwroot\\",
+      "ContentRoot": "/home/huynh/dev/ShopDunk/BE_Shopdunk/wwwroot/",
       "BasePath": "_content/BE_Shopdunk",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\wwwroot\\images\\users\\avatar\\image.png",
+      "Identity": "/home/huynh/dev/ShopDunk/BE_Shopdunk/wwwroot/images/users/avatar/image.png",
       "SourceId": "BE_Shopdunk",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\IT\\SHOPDUNK\\BE_Shopdunk\\wwwroot\\",
+      "ContentRoot": "/home/huynh/dev/ShopDunk/BE_Shopdunk/wwwroot/",
       "BasePath": "_content/BE_Shopdunk",
       "RelativePath": "images/users/avatar/image.png",
       "AssetKind": "All",
@@ -33,7 +33,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\users\\avatar\\image.png"
+      "OriginalItemSpec": "wwwroot/images/users/avatar/image.png"
     }
   ]
 }
