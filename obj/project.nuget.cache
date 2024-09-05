@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i1hH3FB5xaN7L+nRjsaBom0LB7FjY24hc9z7/EYUl2HieVObivhrNNfSUwx79+HO6XeeKSwR9Wm9ADL3Z+b2Yg==",
+  "dgSpecHash": "8w4EXYStWlTABJpj+9iKWZmbzx7S5KIE943mAf1KB1bSfBDncqi3NjJcojBaQhpp2FfMK3453eeIPEhgxUOO8Q==",
   "success": true,
-  "projectFilePath": "/home/huynh/dev/ShopDunk/BE_Shopdunk/BE_Shopdunk.csproj",
+  "projectFilePath": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/BE_Shopdunk.csproj",
   "expectedPackageFiles": [
     "/home/huynh/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/home/huynh/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -3699,11 +3699,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/huynh/dev/ShopDunk/BE_Shopdunk/BE_Shopdunk.csproj",
+      "projectUniqueName": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/BE_Shopdunk.csproj",
       "projectName": "BE_Shopdunk",
-      "projectPath": "/home/huynh/dev/ShopDunk/BE_Shopdunk/BE_Shopdunk.csproj",
+      "projectPath": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/BE_Shopdunk.csproj",
       "packagesPath": "/home/huynh/.nuget/packages/",
-      "outputPath": "/home/huynh/dev/ShopDunk/BE_Shopdunk/obj/",
+      "outputPath": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/huynh/.nuget/NuGet/NuGet.Config"
@@ -3780,7 +3780,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

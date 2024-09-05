@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DDO2cgl08hQk0GKg6rxlEkK6i3kIyVTvoEuVk9Bo7eM=",
+  "Hash": "gwRsRV9rP6CyZCtKJsgk70L/9YXBh78Fdm5ehXF5uBY=",
   "Source": "BE_Shopdunk",
   "BasePath": "_content/BE_Shopdunk",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BE_Shopdunk/wwwroot",
       "Source": "BE_Shopdunk",
-      "ContentRoot": "/home/huynh/dev/ShopDunk/BE_Shopdunk/wwwroot/",
+      "ContentRoot": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/",
       "BasePath": "_content/BE_Shopdunk",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/huynh/dev/ShopDunk/BE_Shopdunk/wwwroot/images/users/avatar/image.png",
+      "Identity": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/users/avatar/image.png",
       "SourceId": "BE_Shopdunk",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/huynh/dev/ShopDunk/BE_Shopdunk/wwwroot/",
+      "ContentRoot": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/",
       "BasePath": "_content/BE_Shopdunk",
       "RelativePath": "images/users/avatar/image.png",
       "AssetKind": "All",
