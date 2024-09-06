@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BE_Shopdunk.Dtos.ProductDto;
 
 namespace BE_Shopdunk.Interface
 {
-    public interface ICategoryRespostory
+    public interface IProductRepository
     {
-        public Task<string?> CategoryCreateAsync(string name);
+        public Task ProductCreateAsync(ProductCreateDto product);
     }
 }

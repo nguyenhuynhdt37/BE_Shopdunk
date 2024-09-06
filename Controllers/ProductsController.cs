@@ -1,3 +1,4 @@
+using BE_Shopdunk.Dtos.ProductDto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BE_Shopdunk.Controller
@@ -10,5 +11,17 @@ namespace BE_Shopdunk.Controller
         // {
         //     return
         // }
+        [HttpPost("create")]
+        public async Task<IActionResult> ProductCreate([FromForm] ProductCreateDto product)
+        {
+            try
+            {
+                await _
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }

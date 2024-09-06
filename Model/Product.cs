@@ -8,11 +8,23 @@ namespace BE_Shopdunk.Model
     {
         [BsonId]
         public ObjectId Id { get; set; }
-        [BsonRequired]
-        public String? Name { get; set; }
-        [BsonRequired]
-        public DateTime CreateDate { get; set; } = DateTime.Now;
-        [BsonRequired]
+
+        [BsonElement("name")]
+        public string? Name { get; set; }
+
+        [BsonElement("category_id")]
         public ObjectId CategoryId { get; set; }
+
+        [BsonElement("supplier_id")]
+        public ObjectId SupplierId { get; set; }
+
+        [BsonElement("variants")]
+        public List<Variant>? Variants { get; set; }
+
+        [BsonElement("created_at")]
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        [BsonElement("updated_at")]
+        public DateTime UpdatedAt { get; set; }
     }
 }
