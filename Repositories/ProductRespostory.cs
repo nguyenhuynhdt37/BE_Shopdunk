@@ -22,7 +22,7 @@ namespace BE_Shopdunk.Repositories
             _category = context.Categorys;
         }
 
-        public async Task<PagedResult<Product, ProductBannerDto>> GetPagedProductsByCategoryAsync(ObjectId categoryId, int pageNumber, int pageSize)
+        public async Task<PagedResult<Product, ProductBannerDto>?> GetPagedProductsByCategoryAsync(ObjectId categoryId, int pageNumber, int pageSize)
         {
             try
             {
@@ -47,7 +47,7 @@ namespace BE_Shopdunk.Repositories
             }
             catch (Exception ex)
             {
-                throw new Exception("Error: ", ex);
+                throw new Exception("Error get product by Category");
             }
 
         }
@@ -77,6 +77,29 @@ namespace BE_Shopdunk.Repositories
                 // throw new Exception("An error occurred when retrieving product information, or the product does not exist");
                 throw new Exception(ex.Message);
             }
+        }
+        public Task<List<PagedResult<Product, ProductBannerDto>?>> GetAllProductsByCategoryAsync(int pageNumber, int pageSize)
+        {
+            const categorys = _category.Find(_ => true).ToListAsync();
+            var data = categorys.Select(category =>
+            {
+                var totalCount = await _product.CountDocumentsAsync(data => data.CategoryId == categoryId);
+                var items = await _product.Find(p => p.CategoryId == categoryId)
+               .Skip((pageNumber - 1) * pageSize)
+               .Limit(pageSize)
+               .ToListAsync();
+
+                return new PagedResult<Product, ProductBannerDto>
+                {
+                    TotalCount = (int)totalCount,
+                    Items = items.Select(i =>
+                     {
+                         var dto = i.toProductBannerDto();
+                         dto.CategoryName = category.Name; // Gán tên danh mục vào DTO
+                         return dto;
+                     }).ToList(),
+                }
+            })
         }
     }
 }

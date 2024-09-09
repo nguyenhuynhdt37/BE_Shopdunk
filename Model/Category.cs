@@ -18,7 +18,5 @@ namespace BE_Shopdunk.Model
         [BsonRequired]
         [BsonElement("supplier_id")]
         public ObjectId SupplierId { get; set; }
-        [BsonIgnore]
-        public List<Product>? Products { get; set; }
     }
 }

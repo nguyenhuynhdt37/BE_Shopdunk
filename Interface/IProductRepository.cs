@@ -12,6 +12,7 @@ namespace BE_Shopdunk.Interface
     {
         public Task ProductCreateAsync(Product product);
         public Task<Product> ProductGetByIDAsync(ObjectId id);
-        public Task<PagedResult<Product, ProductBannerDto>> GetPagedProductsByCategoryAsync(ObjectId categoryId, int pageNumber, int pageSize);
+        public Task<PagedResult<Product, ProductBannerDto>?> GetPagedProductsByCategoryAsync(ObjectId categoryId, int pageNumber, int pageSize);
+        public Task<PagedResult<Product, ProductBannerDto>?> GetAllProductsByCategoryAsync(int pageNumber, int pageSize);
     }
 }

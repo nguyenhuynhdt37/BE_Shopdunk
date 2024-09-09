@@ -51,12 +51,8 @@ namespace BE_Shopdunk.Repositories
             }
             user.RoleID = role.Id;
             user.UserName = user.UserName?.ToLowerInvariant();
-            user.PasswordHash = PasswordHelper.HashPassword(user.PasswordHash);
-
-            // Chèn user vào database
+            user.PasswordHash = PasswordHelper.HashPassword(user?.PasswordHash);
             await _users.InsertOneAsync(user);
-
-            // Trả về user vừa được chèn
             return await _users.Find(x => x.UserName == user.UserName).FirstOrDefaultAsync();
         }
 
