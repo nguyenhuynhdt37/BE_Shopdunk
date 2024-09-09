@@ -1,6 +1,26 @@
 {
   "Files": [
     {
+      "Id": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/products/iphones/iphone13_cover.png",
+      "PackagePath": "staticwebassets/images/products/iphones/iphone13_cover.png"
+    },
+    {
+      "Id": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/products/iphones/iphone13_green_1.png",
+      "PackagePath": "staticwebassets/images/products/iphones/iphone13_green_1.png"
+    },
+    {
+      "Id": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/products/iphones/iphone13_green_2.webp",
+      "PackagePath": "staticwebassets/images/products/iphones/iphone13_green_2.webp"
+    },
+    {
+      "Id": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/users/avatar/avatar2.jpg",
+      "PackagePath": "staticwebassets/images/users/avatar/avatar2.jpg"
+    },
+    {
+      "Id": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/users/avatar/avatar2.jpg:Zone.Identifier",
+      "PackagePath": "staticwebassets/images/users/avatar/avatar2.jpg:Zone.Identifier"
+    },
+    {
       "Id": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/users/avatar/image.png",
       "PackagePath": "staticwebassets/images/users/avatar/image.png"
     },

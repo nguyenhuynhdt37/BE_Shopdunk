@@ -42,5 +42,17 @@ namespace BE_Shopdunk.Repositories
                 throw;
             }
         }
+        public async Task<Category> CategoryGetByID(ObjectId id)
+        {
+            try
+            {
+                var data = await _category.Find(c => c.Id == id).FirstOrDefaultAsync();
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

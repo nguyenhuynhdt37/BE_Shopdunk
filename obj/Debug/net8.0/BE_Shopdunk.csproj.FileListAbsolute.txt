@@ -121,9 +121,10 @@
 /home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BE_Shopdunk.props
 /home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/staticwebassets.pack.json
 /home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/scopedcss/bundle/BE_Shopdunk.styles.css
-/home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/BE_Shopdunk.csproj.CopyComplete
 /home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/BE_Shopdunk.dll
 /home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/refint/BE_Shopdunk.dll
 /home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/BE_Shopdunk.pdb
 /home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/BE_Shopdunk.genruntimeconfig.cache
 /home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/ref/BE_Shopdunk.dll
+/home/huynh/dev/SHOPDUNK/BE_Shopdunk/obj/Debug/net8.0/BE_Shopd.546C2BD8.Up2Date
+/home/huynh/dev/SHOPDUNK/BE_Shopdunk/bin/Debug/net8.0/Newtonsoft.Json.dll

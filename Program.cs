@@ -51,6 +51,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddSingleton<MongoDBContext>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddSingleton<JwtTokenGenerator>();
 
 builder.Services.AddHttpContextAccessor(); // Đăng ký IHttpContextAccessor

@@ -9,12 +9,15 @@ namespace BE_Shopdunk.Model
     public class Variant
     {
         [BsonElement("color")]
+        [BsonRequired]
         public string? Color { get; set; }
 
+        [BsonRequired]
         [BsonElement("images")]
         public List<string>? Images { get; set; }
 
+        [BsonRequired]
         [BsonElement("memory_options")]
         public List<MemoryOption>? MemoryOptions { get; set; }
     }
-}
+}   
