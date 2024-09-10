@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BE_Shopdunk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d893835b740e9e69e906687a0f64f3d0925f72f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c0e85e054cb87deabfc4635a1afcb4270416bd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BE_Shopdunk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BE_Shopdunk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
