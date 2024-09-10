@@ -11,8 +11,6 @@ namespace BE_Shopdunk.Dtos.ProductDto
 
         public string? Name { get; set; }
 
-        public string? CategoryName { get; set; }
-
         public string? ImageCover { get; set; }
 
         public double Price { get; set; }

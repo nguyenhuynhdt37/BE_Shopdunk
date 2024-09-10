@@ -37,10 +37,10 @@ namespace BE_Shopdunk.Repositories
                 return new PagedResult<Product, ProductBannerDto>
                 {
                     TotalCount = (int)totalCount,
+                    CategoryName = category.Name, // Gán tên danh mục vào DTO
                     Items = items.Select(i =>
                      {
                          var dto = i.toProductBannerDto();
-                         dto.CategoryName = category.Name; // Gán tên danh mục vào DTO
                          return dto;
                      }).ToList(),
                 };
@@ -74,32 +74,38 @@ namespace BE_Shopdunk.Repositories
             catch (Exception ex)
             {
                 System.Console.WriteLine(ex.Message);
-                // throw new Exception("An error occurred when retrieving product information, or the product does not exist");
                 throw new Exception(ex.Message);
             }
         }
-        public Task<List<PagedResult<Product, ProductBannerDto>?>> GetAllProductsByCategoryAsync(int pageNumber, int pageSize)
+        public async Task<List<PagedResult<Product, ProductBannerDto>?>> GetAllProductsByCategoryAsync(int pageNumber, int pageSize)
         {
-            const categorys = _category.Find(_ => true).ToListAsync();
-            var data = categorys.Select(category =>
-            {
-                var totalCount = await _product.CountDocumentsAsync(data => data.CategoryId == categoryId);
-                var items = await _product.Find(p => p.CategoryId == categoryId)
-               .Skip((pageNumber - 1) * pageSize)
-               .Limit(pageSize)
-               .ToListAsync();
+            var categories = await _category.Find(_ => true).ToListAsync();
+            var results = new List<PagedResult<Product, ProductBannerDto>?>();
 
-                return new PagedResult<Product, ProductBannerDto>
+            foreach (var category in categories)
+            {
+                var totalCount = await _product.CountDocumentsAsync(p => p.CategoryId == category.Id);
+                var items = await _product.Find(p => p.CategoryId == category.Id)
+                    .Skip((pageNumber - 1) * pageSize)
+                    .Limit(pageSize)
+                    .ToListAsync();
+
+                var pagedResult = new PagedResult<Product, ProductBannerDto>
                 {
                     TotalCount = (int)totalCount,
+                    CategoryName = category.Name,
+                    CategoryId = category.Id.toString()
                     Items = items.Select(i =>
-                     {
-                         var dto = i.toProductBannerDto();
-                         dto.CategoryName = category.Name; // Gán tên danh mục vào DTO
-                         return dto;
-                     }).ToList(),
-                }
-            })
+                    {
+                        var dto = i.toProductBannerDto();
+                        return dto;
+                    }).ToList(),
+                };
+                if (pagedResult.Items.Count() > 0)
+                    results.Add(pagedResult);
+            }
+
+            return results;
         }
     }
 }

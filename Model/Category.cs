@@ -12,6 +12,9 @@ namespace BE_Shopdunk.Model
         [BsonRequired]
         [BsonElement("name")]
         public string? Name { get; set; }
+
+        [BsonElement("priority")]
+        public int Priority { get; set; }
         [BsonRequired]
         [BsonElement("create_date")]
         public DateTime CreateDate { get; set; } = DateTime.Now;
