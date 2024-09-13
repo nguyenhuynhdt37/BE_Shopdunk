@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1s5Cd9zlTzgts6VCQDjqCAMwZLgtaTKSlcnmxGV5iXw=",
+  "Hash": "KBwNuKaDI7WsadH4M+zZcjrAWa0pjbQWEKkjhx+pgos=",
   "Source": "BE_Shopdunk",
   "BasePath": "_content/BE_Shopdunk",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/products/iphones/iPhone_13_official_trailer.mp4",
+      "SourceId": "BE_Shopdunk",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/",
+      "BasePath": "_content/BE_Shopdunk",
+      "RelativePath": "images/products/iphones/iPhone_13_official_trailer.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/products/iphones/iPhone_13_official_trailer.mp4"
+    },
     {
       "Identity": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/products/iphones/iphone13_cover.png",
       "SourceId": "BE_Shopdunk",

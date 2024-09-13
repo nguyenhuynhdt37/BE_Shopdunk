@@ -1,14 +1,19 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 public class ProductDto
 {
+    public string? Id { get; set; }
+
     public string? Name { get; set; }
 
     public string? ImageCover { get; set; }
 
     public string? CategoryName { get; set; }
+
+    public string? CategoryId { get; set; }
 
     public List<string>? Describe { get; set; }
 
@@ -29,6 +34,7 @@ public class ProductDetailsDto
 
     public DimensionsDto? Dimensions { get; set; }
 
+    [DisplayName("Screen resolution")]
     public string? ScreenResolution { get; set; }
 
     public string? WaterproofDustproof { get; set; }
@@ -109,6 +115,8 @@ public class DisplayTechnologyDto
 
 public class VariantDto
 {
+    public string? Id { get; set; }
+
     public string? Color { get; set; }
 
     public string? ColorCode { get; set; }
@@ -120,9 +128,11 @@ public class VariantDto
 
 public class MemoryOptionDto
 {
+    public string? Id { get; set; }
+    
     public string? Storage { get; set; }
 
     public double Price { get; set; }
-   
+
     public double OldPrice { get; set; }
 }

@@ -94,7 +94,7 @@ namespace BE_Shopdunk.Repositories
                 {
                     TotalCount = (int)totalCount,
                     CategoryName = category.Name,
-                    CategoryId = category.Id.toString()
+                    CategoryId = category.Id.ToString(),
                     Items = items.Select(i =>
                     {
                         var dto = i.toProductBannerDto();

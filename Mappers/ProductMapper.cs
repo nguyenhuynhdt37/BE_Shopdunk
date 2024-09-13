@@ -15,7 +15,9 @@ namespace BE_Shopdunk.Mappers
         {
             var productDto = new ProductDto
             {
+                Id = product.Id.ToString(),
                 Name = product.Name,
+                CategoryId = product.CategoryId.ToString(),
                 ImageCover = product.ImageCover,
                 Describe = product.Describe,
                 ProductDetails = new ProductDetailsDto
@@ -70,6 +72,7 @@ namespace BE_Shopdunk.Mappers
                 },
                 Variants = product?.Variants?.Select(v => new VariantDto
                 {
+                    Id = v.Id.ToString(),
                     Color = v.Color,
                     ColorCode = v.ColorCode,
                     Images = v.Images,

@@ -11,12 +11,16 @@ namespace BE_Shopdunk.Model
     {
         [BsonId]
         [BsonElement("id")]
+
         public ObjectId Id { get; set; }
+
         [BsonRequired]
         [BsonElement("name")]
         public string? Name { get; set; }
+        
         [BsonIgnoreIfNull]
         [BsonElement("description")]
+
         public string? Description { get; set; } = null;
     }
 }

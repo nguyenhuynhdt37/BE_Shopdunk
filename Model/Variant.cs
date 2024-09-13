@@ -2,12 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace BE_Shopdunk.Model
 {
     public class Variant
     {
+        [BsonId]
+        [BsonRequired]
+        public ObjectId Id { get; set; }
+
         [BsonElement("color")]
         [BsonRequired]
         public string? Color { get; set; }
@@ -20,4 +25,4 @@ namespace BE_Shopdunk.Model
         [BsonElement("memory_options")]
         public List<MemoryOption>? MemoryOptions { get; set; }
     }
-}   
+}

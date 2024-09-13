@@ -25,14 +25,14 @@ namespace BE_Shopdunk.Repositories
             var category = await _category.Find(x => x.Name.ToLower() == name.ToLower()).FirstOrDefaultAsync();
             return category != null;
         }
-        public async Task CategoryCreateAsync(string name, string User_id)
+        public async Task CategoryCreateAsync(string name, ObjectId User_id)
         {
             try
             {
                 var categoryModel = new Category()
                 {
                     Name = name,
-                    SupplierId = new ObjectId(User_id)
+                    SupplierId = User_id
                 };
                 await _category.InsertOneAsync(categoryModel);
             }
@@ -53,6 +53,13 @@ namespace BE_Shopdunk.Repositories
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public async Task<Category?> getCatgoryByID(ObjectId Id)
+        {
+            var category = await _category.Find(c => c.Id == Id).FirstOrDefaultAsync();
+            if (category == null) return null;
+            return category;
         }
     }
 }

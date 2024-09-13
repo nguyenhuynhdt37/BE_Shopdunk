@@ -16,9 +16,10 @@ namespace BE_Shopdunk.Controller
         private readonly IProductRepository _productRepo;
         private readonly ICategoryRepository _categoryRepo;
 
-        public ProductController(IProductRepository productRepo)
+        public ProductController(IProductRepository productRepo, ICategoryRepository categoryRepo)
         {
             _productRepo = productRepo;
+            _categoryRepo = categoryRepo;
         }
         // [Authorize]
         // [HttpPost("create")]
@@ -47,7 +48,11 @@ namespace BE_Shopdunk.Controller
                 var idModel = new ObjectId(id);
                 var product = await _productRepo.ProductGetByIDAsync(idModel);
                 if (product == null) return NotFound();
-                return Ok(product.ToProductDto());
+                var category = await _categoryRepo.getCatgoryByID(product.CategoryId);
+                if (category == null) return NotFound();
+                var productDto = product.ToProductDto();
+                productDto.CategoryName = category.Name;
+                return Ok(productDto);
             }
             catch (Exception ex)
             {

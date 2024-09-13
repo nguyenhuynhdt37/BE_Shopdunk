@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/products/iphones/iPhone_13_official_trailer.mp4",
+      "PackagePath": "staticwebassets/images/products/iphones/iPhone_13_official_trailer.mp4"
+    },
+    {
       "Id": "/home/huynh/dev/SHOPDUNK/BE_Shopdunk/wwwroot/images/products/iphones/iphone13_cover.png",
       "PackagePath": "staticwebassets/images/products/iphones/iphone13_cover.png"
     },

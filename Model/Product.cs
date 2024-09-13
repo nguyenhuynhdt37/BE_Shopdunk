@@ -1,6 +1,7 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 public class Product
 {
@@ -31,6 +32,7 @@ public class Product
 
 public class ProductDetails
 {
+
     [BsonElement("video_recording")]
     public VideoRecording? VideoRecording { get; set; }
 
@@ -178,6 +180,10 @@ public class DisplayTechnology
 
 public class Variant
 {
+    [BsonId]
+    [BsonElement("id")]
+    public ObjectId Id { get; set; }
+
     [BsonElement("color")]
     public string? Color { get; set; }
 
@@ -193,6 +199,9 @@ public class Variant
 
 public class MemoryOption
 {
+    [BsonId]
+    [BsonElement("id")]
+    public ObjectId Id { get; set; }
     [BsonElement("storage")]
     public string? Storage { get; set; }
 
@@ -201,4 +210,7 @@ public class MemoryOption
 
     [BsonElement("old_price")]
     public double OldPrice { get; set; }
+
+    [BsonElement("quantity")]
+    public int Quantity { get; set; }
 }
