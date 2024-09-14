@@ -1,19 +1,20 @@
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-using System.Collections.Generic;
 using System.ComponentModel;
 
 public class ProductDto
 {
-    public string? Id { get; set; }
+    public string? Id { get; set; }  // Tương ứng với "$oid" trong JSON
+
+    public int Position { get; set; } // Thêm trường Position
 
     public string? Name { get; set; }
 
     public string? ImageCover { get; set; }
 
-    public string? CategoryName { get; set; }
+    public string? CategoryId { get; set; } // Giữ nguyên CategoryId cho ID của category
 
-    public string? CategoryId { get; set; }
+    public string? CategoryName { set; get; }
+
+    public string? SupplierId { get; set; } // Thêm SupplierId
 
     public List<string>? Describe { get; set; }
 
@@ -49,9 +50,8 @@ public class ProductDetailsDto
 
     public string? FrontCamera { get; set; }
 
-    public DisplayTechnologyDto? DisplayTechnology { get; set; }
+    public DisplayTechnologyDto? DisplayTechnology { get; set; } // Giữ nguyên DisplayTechnology nếu có dữ liệu
 }
-
 public class VideoRecordingDto
 {
     public string? Resolution { get; set; }
@@ -59,13 +59,18 @@ public class VideoRecordingDto
     public string? FrameRate { get; set; }
 
     public string? RecordingMode { get; set; }
-}
 
+    public string? OtherFeatures { get; set; } // Thêm trường OtherFeatures
+}
 public class ConnectivityDto
 {
     public string? MobileNetwork { get; set; }
 
+    public string? SIM { get; set; } // Thêm trường SIM
+
     public string? Wifi { get; set; }
+
+    public string? GPS { get; set; } // Thêm trường GPS
 
     public string? Bluetooth { get; set; }
 
@@ -73,7 +78,6 @@ public class ConnectivityDto
 
     public string? HeadphoneJack { get; set; }
 }
-
 public class DimensionsDto
 {
     public string? Length { get; set; }
@@ -84,14 +88,14 @@ public class DimensionsDto
 
     public string? Weight { get; set; }
 }
-
 public class ChipDto
 {
     public string? CPU { get; set; }
 
     public string? CPUSpeed { get; set; }
-}
 
+    public string? GPU { get; set; } // Thêm trường GPU nếu có dữ liệu
+}
 public class BatteryDto
 {
     public string? Capacity { get; set; }
@@ -100,22 +104,23 @@ public class BatteryDto
 
     public string? Charging { get; set; }
 }
-
 public class CameraDto
 {
     public string? Primary { get; set; }
-}
 
+    public string? Secondary { get; set; } // Thêm trường Secondary nếu có dữ liệu
+}
 public class DisplayTechnologyDto
 {
-    public string? ScreenType { get; set; }
+    public string? ScreenType { get; set; } // Thêm trường ScreenType nếu có dữ liệu
 
     public string? Features { get; set; }
-}
 
+    public string? MaxBrightness { get; set; } // Thêm trường MaxBrightness nếu có dữ liệu
+}
 public class VariantDto
 {
-    public string? Id { get; set; }
+    public string? Id { get; set; }  // Tương ứng với "$oid" trong JSON
 
     public string? Color { get; set; }
 
@@ -125,14 +130,15 @@ public class VariantDto
 
     public List<MemoryOptionDto>? MemoryOptions { get; set; }
 }
-
 public class MemoryOptionDto
 {
-    public string? Id { get; set; }
-    
+    public string? Id { get; set; }  // Tương ứng với "$oid" trong JSON
+
     public string? Storage { get; set; }
 
     public double Price { get; set; }
 
     public double OldPrice { get; set; }
+
+    public int Quantity { get; set; } // Thêm trường Quantity nếu có dữ liệu
 }

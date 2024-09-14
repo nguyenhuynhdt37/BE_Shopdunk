@@ -6,7 +6,11 @@ using System.ComponentModel;
 public class Product
 {
     [BsonId]
-    public ObjectId Id { get; set; }
+    [BsonElement("_id")]
+    public ObjectId Id { get; set; }  // Tương ứng với "$oid" trong JSON
+
+    [BsonElement("position")]
+    public int Position { get; set; }  // Trường không có trong lớp của bạn, nhưng có trong JSON
 
     [BsonElement("name")]
     public string? Name { get; set; }
@@ -32,7 +36,6 @@ public class Product
 
 public class ProductDetails
 {
-
     [BsonElement("video_recording")]
     public VideoRecording? VideoRecording { get; set; }
 
@@ -70,7 +73,45 @@ public class ProductDetails
     public string? FrontCamera { get; set; }
 
     [BsonElement("display_technology")]
-    public DisplayTechnology? DisplayTechnology { get; set; }
+    public DisplayTechnology? DisplayTechnology { get; set; }  // Thêm vào nếu có trong dữ liệu JSON
+}
+public class DisplayTechnology
+{
+    [BsonElement("screen_type")]
+    public string? ScreenType { get; set; }
+
+    [BsonElement("features")]
+    public string? Features { get; set; }
+
+    [BsonElement("max_brightness")]
+    public string? MaxBrightness { get; set; }
+}
+
+public class Camera
+{
+    [BsonElement("primary")]
+    public string? Primary { get; set; }
+
+    [BsonElement("secondary")]
+    public string? Secondary { get; set; }
+}
+
+public class Battery
+{
+    [BsonElement("capacity")]
+    public string? Capacity { get; set; }
+
+    [BsonElement("type")]
+    public string? Type { get; set; }
+
+    [BsonElement("charging")]
+    public string? Charging { get; set; }
+
+    [BsonElement("charger_included")]
+    public string? ChargerIncluded { get; set; }
+
+    [BsonElement("battery_technology")]
+    public string? BatteryTechnology { get; set; }
 }
 
 public class VideoRecording
@@ -87,7 +128,6 @@ public class VideoRecording
     [BsonElement("other_features")]
     public string? OtherFeatures { get; set; }
 }
-
 public class Connectivity
 {
     [BsonElement("mobile_network")]
@@ -111,7 +151,6 @@ public class Connectivity
     [BsonElement("headphone_jack")]
     public string? HeadphoneJack { get; set; }
 }
-
 public class Dimensions
 {
     [BsonElement("length")]
@@ -126,7 +165,6 @@ public class Dimensions
     [BsonElement("weight")]
     public string? Weight { get; set; }
 }
-
 public class Chip
 {
     [BsonElement("cpu")]
@@ -138,50 +176,10 @@ public class Chip
     [BsonElement("gpu")]
     public string? GPU { get; set; }
 }
-
-public class Battery
-{
-    [BsonElement("capacity")]
-    public string? Capacity { get; set; }
-
-    [BsonElement("type")]
-    public string? Type { get; set; }
-
-    [BsonElement("charging")]
-    public string? Charging { get; set; }
-
-    [BsonElement("charger_included")]
-    public string? ChargerIncluded { get; set; }
-
-    [BsonElement("battery_technology")]
-    public string? BatteryTechnology { get; set; }
-}
-
-public class Camera
-{
-    [BsonElement("primary")]
-    public string? Primary { get; set; }
-
-    [BsonElement("secondary")]
-    public string? Secondary { get; set; }
-}
-
-public class DisplayTechnology
-{
-    [BsonElement("screen_type")]
-    public string? ScreenType { get; set; }
-
-    [BsonElement("features")]
-    public string? Features { get; set; }
-
-    [BsonElement("max_brightness")]
-    public string? MaxBrightness { get; set; }
-}
-
 public class Variant
 {
     [BsonId]
-    [BsonElement("id")]
+    [BsonElement("_id")]
     public ObjectId Id { get; set; }
 
     [BsonElement("color")]
@@ -196,20 +194,20 @@ public class Variant
     [BsonElement("memory_options")]
     public List<MemoryOption>? MemoryOptions { get; set; }
 }
-
 public class MemoryOption
 {
     [BsonId]
     [BsonElement("id")]
     public ObjectId Id { get; set; }
+
     [BsonElement("storage")]
     public string? Storage { get; set; }
 
     [BsonElement("price")]
-    public double Price { get; set; }
+    public decimal Price { get; set; }
 
     [BsonElement("old_price")]
-    public double OldPrice { get; set; }
+    public decimal OldPrice { get; set; }
 
     [BsonElement("quantity")]
     public int Quantity { get; set; }

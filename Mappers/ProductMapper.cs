@@ -78,9 +78,10 @@ namespace BE_Shopdunk.Mappers
                     Images = v.Images,
                     MemoryOptions = v.MemoryOptions.Select(mo => new MemoryOptionDto
                     {
+                        Id = mo.Id.ToString(),
                         Storage = mo.Storage,
-                        Price = mo.Price,
-                        OldPrice = mo.OldPrice
+                        Price = (double)mo.Price,
+                        OldPrice = (double)mo.OldPrice
                     }).ToList()
                 }).ToList()
             };
