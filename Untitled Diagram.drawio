@@ -1,0 +1,29 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="jYpGHb8xBEurPYT_IFz7">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="User" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="48" y="8" width="47" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Process" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="31" y="128" width="83" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Response" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="24" y="248" width="95" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Performs action" style="curved=1;startArrow=none;endArrow=block;exitX=0.51;exitY=1.01;entryX=0.49;entryY=-0.01;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" value="Triggers response" style="curved=1;startArrow=none;endArrow=block;exitX=0.49;exitY=1;entryX=0.51;entryY=0.01;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
